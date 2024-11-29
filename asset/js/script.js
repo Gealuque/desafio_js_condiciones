@@ -31,17 +31,11 @@ const valor3 = val3.value
 let resultado = Number
 resultado = 0
 
-
-
 btn_1.addEventListener('click', () => {
     const valor1 = Number(val1.value)
     const valor2 = Number(val2.value)
     const valor3 = Number(val3.value)
     resultado = valor1 + valor2 + valor3
-    console.log(valor1)
-    console.log(valor2)
-    console.log(valor3)
-    console.log(resultado)
     if(valor1 < 0 || valor2 <0 || valor3 <0){
         msj.innerHTML = 'Por favor ingrese números validos'
     }else if(resultado <= 10){
@@ -52,13 +46,27 @@ btn_1.addEventListener('click', () => {
 })
 
 
-/*
-btn_1.addEventListener('click', function(){
-    if(resultado < 0){
-        alert('Coloque números validos')
-    }else if(resultado => 0 && resultado <= 10){
-       alert('Levas' + resultado + 'stickers')
-    }else if (resultado >= 10){
-        alert('Levas demasiados stickers')
+// Caso 3
+
+let n_1 = document.querySelector('#num1')
+let n_2 = document.querySelector('#num2')
+let n_3 = document.querySelector('#num3')
+const btn_2 = document.querySelector('.btn_2')
+const msj2 = document.querySelector('#msj2')
+
+const numero1 = n_1.value
+const numero2 = n_2.value
+const numero3 = n_3.value
+
+btn_2.addEventListener('click', () => {
+    const numero1 = Number(n_1.value)
+    const numero2 = Number(n_2.value)
+    const numero3 = Number(n_3.value)
+    if(numero1 == 9 && numero2 == 1 && numero3 == 1){
+       msj2.innerHTML = 'Password 1 es Correcto'
+    }else if((numero1 == 7 && numero2 == 1 && numero3 == 4)){
+        msj2.innerHTML = 'Password 2 es Correcto'
+    }else{
+        msj2.innerHTML = 'Password Incorrecto'
     }
-})*/
+})

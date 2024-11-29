@@ -14,6 +14,7 @@ body{
 .container{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 h1{
     font-size: xx-large;
@@ -23,6 +24,7 @@ h1{
     0 0 30px rgba(255, 0, 0, 0.4),    
     0 0 40px rgba(255, 0, 0, 0.2);    
 }
+
 /*Caso 1*/
 .box_1{
     display: flex;
@@ -101,10 +103,40 @@ h1{
         0 0 30px rgba(255, 0, 0, 0.4),    
         0 0 40px rgba(255, 0, 0, 0.2);    
 }
-.btn_1{
+.btn_1,.btn_2{
     color: rgb(251, 16, 16);
     border-color: white;
 }
 
+/* Caso 3 */
 
+h2{
+    font-size: medium;
+    text-shadow: 
+        0 0 10px rgba(252, 249, 249, 0.8),
+        0 0 20px rgba(255, 255, 255, 0.6),  
+        0 0 30px rgba(234, 232, 232, 0.4),    
+        0 0 40px rgba(255, 255, 255, 0.2);  
+}
 
+.box_clave{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid lightgrey;
+    background-color: rgb(185, 40, 40);
+    border-radius: 30px;
+    width: 180px;
+}
+.text_msj2{
+    font-size: small;
+    text-shadow: 
+    0 0 10px rgba(211, 210, 210, 0.8),
+    0 0 20px rgba(248, 246, 246, 0.6),  
+    0 0 30px rgba(68, 62, 62, 0.4),    
+    0 0 40px rgba(22, 17, 17, 0.2);  
+}
+.boton_box{
+    padding-bottom: 7px;
+}
