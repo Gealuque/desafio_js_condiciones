@@ -38,12 +38,22 @@ btn_1.addEventListener('click', () => {
     resultado = valor1 + valor2 + valor3
     if(valor1 < 0 || valor2 <0 || valor3 <0){
         msj.innerHTML = 'Por favor ingrese números validos'
+        document.getElementById('input1').value = "";
+        document.getElementById('input2').value = "";
+        document.getElementById('input3').value = "";
     }else if(resultado <= 10){
-        msj.innerHTML = 'Levas ' + resultado + ' Stickers'
+        msj.innerHTML = 'Llevas ' + resultado + ' Stickers'
+        document.getElementById('input1').value = "";
+        document.getElementById('input2').value = "";
+        document.getElementById('input3').value = "";
     }else{
         msj.innerHTML = 'Llevas demasiados stickers!!'
+        document.getElementById('input1').value = "";
+        document.getElementById('input2').value = "";
+        document.getElementById('input3').value = "";
     }
 })
+
 
 
 // Caso 3
@@ -64,9 +74,19 @@ btn_2.addEventListener('click', () => {
     const numero3 = Number(n_3.value)
     if(numero1 == 9 && numero2 == 1 && numero3 == 1){
        msj2.innerHTML = 'Password 1 es Correcto'
+       document.querySelector('#num1').value = ""
+       document.querySelector('#num2').value = ""
+       document.querySelector('#num3').value = ""
+
     }else if((numero1 == 7 && numero2 == 1 && numero3 == 4)){
         msj2.innerHTML = 'Password 2 es Correcto'
+        document.querySelector('#num1').value = ""
+        document.querySelector('#num2').value = ""
+        document.querySelector('#num3').value = ""
     }else{
         msj2.innerHTML = 'Password Incorrecto'
+        document.getElementById('num1').value = ""
+        document.getElementById('num2').value = ""
+        document.getElementById('num3').value = ""
     }
 })
